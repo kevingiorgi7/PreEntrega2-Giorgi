@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DM Odontología</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="../css/main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../media/logo2.png">
+</head>
+<body>
+    <header id="header"></header>
+    <!--Logo + Navagador-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#header"><img src="../media/logo2.png" alt="logo" width="100px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav nav--fontsize">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../index.html#quiensoy">Quien Soy</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../index.html#especialidades">Especialidades</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="../index.html#consultorio">Consultorio</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#header">Para Niños</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./consejos.html">Consejos</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Consultas
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./preguntas.html">Preguntes Frecuentes</a></li>
+                    <li><a class="dropdown-item" href="./solicitaturno.html">Solicita Turno</a></li>
+                </ul>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Seccion para niños-->
+    <div class="grid-ninos grid-videos" id="paraninos">
+        <div class="grid-intro">
+            <h4>Para niños</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam molestias quos similique quam vitae ipsa dolorum quidem eaque voluptates et quasi laudantium sit, possimus nemo dolores perspiciatis maiores iste quisquam!
+            </p>
+        </div>
+        <iframe class="grid-video-1 video--chico" 
+            width="380" height="234" src="https://www.youtube.com/embed/xZBWV7dT3CI" 
+            title="Sasha visita odontología y aprende a cepillarse los dientes | Aprendiendo nuevas profesiones" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+        <iframe class="grid-video-2 video--chico" 
+        width="380" height="234" src="https://www.youtube.com/embed/PQWb3-ibZ1c" 
+        title="DOCTOR MUELITAS PARTE 1.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+        <iframe class="grid-video-3 video--grande" 
+            width="760" height="468" src="https://www.youtube.com/embed/s46hUwvIJMw"
+            title="Vamos a cepillarnos los dientes con la Familia Telerín | Colgate"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+        <iframe class="grid-video-4 video--grande" 
+            width="760" height="468" src="https://www.youtube.com/embed/W4nm1Ok2wS4" title="Vamos al Dentista 🦷 | Bebé Juan en Español | Little Angel Español" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+        </iframe>
+    </div>
+    
+    <!--Pie de pagina -->
+    <footer id="pie" class="footer--color"> 
+        <div class="container-fluid text-sm-center text-md-start text-lg-start">
+            <div class="row div--bordertop div--padding">
+                <div class="col-sm-9 bold">
+                    <h5>Od. Débora Marquez- Mat. 123456</h5>
+                    <h5>Odontologia Integral</h5>
+                    <h5>San Luis 1641 - Monte Maíz - Córdoba
+                    <h5>Tel: 3468 417605</h5>
+                    <h5>E-mail: <a href="mailto:debi.marquez@hotmail.com">debi.marquez@hotmail.com</a></h5>
+                    <h5>Horarios de atención: De Lunes a Viernes, solo con cita previa. <a href="./solicitaturno.html">Solicita tu turno</a></h5>
+                    <br>
+                    <button type="button" class="btn btn-light">
+                        <a class="dropdown-item" href="#header">
+                            Subir
+                        </a>
+                    </button>
+                </div>
+                <div class="col-sm-3">
+                    <img class="img-fluid" src="../media/logo2.png" alt="logo" width="200px">
+                </div>
+            </div>
+        <br>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
