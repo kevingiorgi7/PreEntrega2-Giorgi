@@ -5,103 +5,258 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DM Odontología</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous">
     <link href="../css/main.css" rel="stylesheet">
     <link rel="shortcut icon" href="../media/logo2.png">
 </head>
 <body>
-    <header id="header"></header>
-    <!--Logo + Navagador-->
+    <!--Sección Header: Logo + Navegador-->
+    <header id="header">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#header"><img src="../media/logo2.png" alt="logo" width="100px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand" href="#header">
+                <img src="../media/logo2.png" alt="logo de odontologia de Débora Márquez" 
+                width="100px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav nav--fontsize">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html#inicio">Inicio</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="../index.html#quiensoy">Quien Soy</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="../index.html#especialidades">Especialidades</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="../index.html#consultorio">Consultorio</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./paraninos.html">Para Niños</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./consejos.html">Consejos</a>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Consultas
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#header">Preguntes Frecuentes</a></li>
-                    <li><a class="dropdown-item" href="./solicitaturno.html">Solicita Turno</a></li>
+                <ul class="navbar-nav nav--fontsize">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html"
+                            aria-current="page" 
+                            >Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#quiensoy"
+                            >Quien Soy
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#especialidades"
+                            >Especialidades
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#consultorio"
+                            >Consultorio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paraninos.html"
+                            >Para Niños
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./consejos.html"
+                            >Consejos
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"
+                            >Consultas
+                        </a>
+                        <ul class="consultas--backcolor dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="./preguntas.html"
+                                    >Preguntes Frecuentes
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./solicitaturno.html"
+                                    >Solicita Turno
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
-                </li>
-            </ul>
             </div>
         </div>
     </nav>
-    
-    <!--Seccion Preguntas frecuentes-->
+    </header>
+    <!--Seccion Preguntas frecuentes: Aqui va a haber informacion sobre 
+    las principales preguntas o dudas odontologicas-->
     <br>
     <br>
     <div class="flex-padre">
         <div>
         <h4>Preguntas Frecuentes</h4>
-        <p> <!-- Aqui se va a escribir una introducción breve sobre las preguntas frecuentes que se van a explicar abajo -->
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quia impedit illo qui eum nobis laborum fugiat, aliquid in minus veritatis, nostrum tenetur. At alias molestias, vero fugit quae fuga.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quia impedit illo qui eum nobis laborum fugiat, aliquid in minus veritatis, nostrum tenetur. At alias molestias, vero fugit quae fuga.
+        <p>
+            Aquí van a poder encontrar breves explicaciones sobre los principales 
+            temas de consultas odontológicos
         </p>
         </div>
     </div>
     <div>
         <div class="flex-padre">
-            <dt class="flex-hijo-titulo"><h3><li>Pregunta Frecuente Nro 1:</h3></li></dt> 
-            <dd> <!--Aquí se va a explicar de que se trata el Pregunta Frecuente Nro 1-->
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo fugit hic culpa est, quas cumque provident eum, perspiciatis laborum tenetur suscipit nesciunt porro reprehenderit rem! Alias veritatis dolore ut fugit.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo fugit hic culpa est, quas cumque provident eum, perspiciatis laborum tenetur suscipit nesciunt porro reprehenderit rem! Alias veritatis dolore ut fugit.
-            <br>
-            <br>
+            <dt class="flex-hijo-titulo"><h3><li>BRUXISMO</h3></li></dt> 
+            <dd> 
+                Es trastorno que afecta a entre un 10 y un 20% de la población mundial, 
+                sin diferencias notables en cuestiones de sexo. Es la acción involuntaria de 
+                rechinar o apretar los dientes sin propósitos funcionales. Este trastorno puede 
+                ocurrir durante el día, aunque lo habitual es que se dé durante la noche.
+                El bruxismo suele estar provocado por factores psicológicos, pero también puede 
+                tener un origen genético, estar causado por otros problemas bucodentales o 
+                enfermedades o estar relacionado con el consumo de determinado tipo de medicación, 
+                tabaco o sustancias estupefacientes. Uno de los problemas del bruxismo, 
+                especialmente del nocturno, es la dificultad para detectarlo. Los bruxistas 
+                no suelen ser conscientes de su situación hasta que alguien no se lo dice o las 
+                consecuencias empiezan a ser perceptibles a simple vista. Una de las formas más 
+                habituales de diagnosticarlo y controlarlo es visitando al dentista con frecuencia.
+                Aunque el bruxismo puede ser leve, esporádico y no tener consecuencias, en los 
+                casos más graves puede conllevar bastantes problemas como desgastes, roturas, 
+                sensibilidad dental, dolores musculares, de mandíbula, de oído y/o de cabeza o 
+                trastornos de sueño. Hay que tener en cuenta que, en algunas ocasiones, el 
+                problema puede desaparecer por sí solo, por lo que no es necesario ningún elemento 
+                añadido. Pero, en casos de bruxismo crónico, hay que tratar de recuperar una 
+                correcta oclusión. Entre las posibles soluciones están los tratamientos de 
+                ortodoncia, el uso de férulas de descarga, la fisioterapia de ATM, la reparación 
+                de los dientes desgastados, el uso de medicación tranquilizante, la relajación y 
+                algunos remedios caseros.
+                <br>
+                <br>
             </dd>
         </div>
         <div class="flex-padre">
-            <dt class="flex-hijo-titulo"><h3><li>Pregunta Frecuente Nro 2:</li></h3>
-            <dd> <!--Aquí se va a explicar de que se trata el Pregunta Frecuente Nro 2-->
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo fugit hic culpa est, quas cumque provident eum, perspiciatis laborum tenetur suscipit nesciunt porro reprehenderit rem! Alias veritatis dolore ut fugit.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo fugit hic culpa est, quas cumque provident eum, perspiciatis laborum tenetur suscipit nesciunt porro reprehenderit rem! Alias veritatis dolore ut fugit.
-            <br>
-            <br>
+            <dt class="flex-hijo-titulo"><h3><li>LA XEROSTOMÍA O SENSACIÓN DE BOCA SECA</h3></li></dt> 
+            <dd> 
+                Es el resultado de un flujo inadecuado de saliva.  La saliva actúa contra los 
+                organismos patógenos y es un aliado fundamental en el proceso de trabajo de los 
+                dientes y de las encías. También contiene iones minerales que son los ingredientes 
+                de los que se componen los dientes. De esta manera la saliva ayuda a remineralizar 
+                los dientes y a reparar pequeñas lesiones en el esmalte. ¿Qué produce la sequedad 
+                de boca? La sequedad de boca no es una enfermedad en sí misma, sino un síntoma que 
+                puede estar provocado, entre tantas cosas, por alguna enfermedad sistémica o el 
+                efecto secundario de ciertos tratamientos o  medicamentos antihistamínicos, 
+                descongestionantes, analgésicos, diuréticos, antihipertensivos o antidepresivos. 
+                Cuando no hay saliva suficiente, los restos de alimentos no se eliminan, lo que 
+                suele generar un mayor volumen de placa en los dientes y en la lengua, y su 
+                consiguiente mal olor. Tratamiento para la boca seca: Para solucionar los 
+                problemas de boca seca, siempre se aconseja aumentar la ingesta de agua, 
+                aunque su dentista puede recomendar otros métodos para restaurar la humedad 
+                como el consumo de saliva artificial, enjuagues orales, chicles, caramelos o, 
+                en incluso en casos extremos, medicación.
+                <br>
+                <br>
             </dd>
         </div>
         <div class="flex-padre">
-            <dt class="flex-hijo-titulo"><h3><li>Pregunta Frecuente Nro 3:</li></h3></dt>
-            <dd><!--Aquí se va a explicar de que se trata el Pregunta Frecuente Nro 3-->
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ipsam voluptates accusamus nostrum aperiam repudiandae iure facilis, dolorem obcaecati, harum repellat ipsa explicabo dolores. Laborum, molestias ullam? Mollitia, excepturi. Velit.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dolore unde exercitationem corporis, architecto nostrum odit iste velit iusto doloribus maxime perspiciatis harum. Porro est fugit doloribus aut? Eveniet, sit?
-            <br>
-            <br>
+            <dt class="flex-hijo-titulo"><h3><li>HERPES LABIAL</h3></li></dt> 
+            <dd> 
+                Es una infección vírica que afecta a un gran porcentaje de la población. 
+                Es extremadamente contagioso y es transmitido a través del contacto directo 
+                con las lesiones ulcerativas activas a través de secreciones como la saliva. 
+                Los adultos suelen padecer herpes labial recurrente y es que, una vez haya 
+                ocurrido un episodio, el virus permanece inactivo pero puede reaparecer. Estos 
+                rebrotes suelen ir acompañados de escozor, picazón, sensación de hormigueo, 
+                ampollas y costras. En algunos casos, los síntomas pueden llegar al interior 
+                de la boca. Tratamiento del herpes labial: Las lesiones causadas por este virus 
+                suelen remitir por sí solas en una o dos semanas, aunque en ocasiones puede hasta 
+                doblarse este tiempo. Si es detectado de forma temprana, se puede tratar 
+                con medicamentos antivíricos para reducir los síntomas. Una vez manifestado, 
+                el tratamiento suele ser sintomático con geles protectores y anestésicos, aunque 
+                la aplicación de frío local también puede ayudar. Se recomienda no tocarse las 
+                lesiones para evitar infectar la zona afectada, dificultar la cicatrización o 
+                diseminar el virus a otras partes del cuerpo.
+                <br>
+                <br>
             </dd>
         </div>
         <div class="flex-padre">
-            <dt class="flex-hijo-titulo"><h3><li>Pregunta Frecuente Nro 4:</li></h3></dt>
-            <dd><!--Aquí se va a explicar de que se trata el Pregunta Frecuente Nro 4-->
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde ipsam voluptates accusamus nostrum aperiam repudiandae iure facilis, dolorem obcaecati, harum repellat ipsa explicabo dolores. Laborum, molestias ullam? Mollitia, excepturi. Velit.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, dolore unde exercitationem corporis, architecto nostrum odit iste velit iusto doloribus maxime perspiciatis harum. Porro est fugit doloribus aut? Eveniet, sit?
-            <br>
-            <br>
+            <dt class="flex-hijo-titulo"><h3><li>AFTAS BUCALES O LLAGAS EN LA BOCA</h3></li></dt> 
+            <dd> 
+                Son lesiones superficiales que aparecen en los tejidos blandos de la boca como 
+                labios y lengua. Las llagas podrían ser el síntoma de una enfermedad sistémica; 
+                como puede ser una infección por bacterias, virus u hongos o como resultado de 
+                irritación causada por aparatos de ortodoncia, dentaduras postizas o el borde 
+                afilado de un diente roto o empaste. Cómo curar las llagas: Las aftas de menor 
+                tamaño suelen desaparecer sin secuelas a los 10-14 días, mientras que las de mayor 
+                tamaño pueden tardar hasta un mes y pueden dejar cicatriz. En casos más graves 
+                el odontólogo puede prescribir el uso de corticoides tópicos. En cualquier 
+                situación, es importante mantener una correcta higiene bucal. También se 
+                recomienda evitar tomar comidas picantes, ácidas o irritantes que puedan 
+                agravar el estado de las úlceras, así como el uso de colutorios que contengan 
+                alcohol u otros agentes irritantes. Finalmente, hay que evaluar los posibles 
+                factores desencadenantes y comprobar si existe alguna deficiencia vitamínica, 
+                alergia, infección o traumatismo local.
+                <br>
+                <br>
             </dd>
-            <br>
-            <br>
+        </div>
+        <div class="flex-padre">
+            <dt class="flex-hijo-titulo"><h3><li>PROBLEMAS DENTALES Y BUCALESFRECUENTES</h3></li></dt> 
+            <dd> 
+                <span class="negrita">Dolor de muelas:</span>
+                <br>
+                <p>
+                    Suele indicar que existe una caries, aunque también podría ser debido a una 
+                    enfermedad de las encías o a un absceso dental.
+                </p> 
+                <span class="negrita">La sensibilidad dental:</span>
+                <br>
+                <p>
+                    Es una molestia o dolor en los dientes causado por el contacto de estos 
+                    con determinado tipo de sustancias o por la temperatura de estas sustancias.
+                </p>
+                <span class="negrita">Sangrado de encías:</span>
+                <br>
+                <p>
+                    Si es pequeño o muy esporádico, no debería preocuparnos, pero si es algo 
+                    frecuente o excesivo requiere ponerle remedio lo antes posible.
+                </p> 
+                <span class="negrita">Las llagas en la boca:</span>
+                <br>
+                <p>
+                    Varían en su gravedad y causas, y se incluyen aftas, herpes labial, 
+                    leucoplasia y candidiasis. Las llagas también podrían ser el 
+                    síntoma de una enfermedad sistémica.
+                </p> 
+                <span class="negrita">La halitosis o mal aliento:</span>
+                <br>
+                <p>
+                    Es una condición desagradable que provoca vergüenza y problemas sociales. 
+                    Las causas de este problema pueden variar, al igual que sus tratamientos.
+                </p>
+                <span class="negrita">Dolor de mandíbula:</span>
+                <br>
+                <p>
+                    Muchos adultos sufren dolor crónico en mandíbula y 
+                    cara. Algunos síntomas comunes son la molestia en o alrededor del oído, 
+                    sensibilidad de la mandíbula, dolor al morder o cefaleas. No siempre es 
+                    fácil determinar las causas de este dolor, por lo que se recomienda una 
+                    revisión exhaustiva por parte del dentista, que puede incluir radiografías.
+                </p>
+                <span class="negrita">La boca seca:</span>
+                <br>
+                <p>
+                    También llamada xerostomía, es el resultado de un flujo inadecuado de saliva.
+                </p> 
+                <span class="negrita">Dientes rotos:</span>
+                <br>
+                <p>
+                    Un diente agrietado o roto puede ocurrir por una variedad de razones, y 
+                    aunque la grieta puede ser invisible a simple vista e incluso a rayos X, 
+                    puede ser increíblemente dolorosa.
+                </p>
+                <span class="negrita">Manchas en los dientes:</span>
+                <br>
+                <p>
+                    Con el tiempo, los dientes pueden mancharse y cambiar de color, provocado, 
+                    generalmente, por determinados tipos de alimentación, al tabaco, el 
+                    envejecimiento, lesiones o golpes, el uso de determinados medicamentos y 
+                    a una cuestión genética.
+                </p>
+                <br>
+                <br>
+            </dd>
         </div>
     </div>
     
@@ -110,12 +265,18 @@
         <div class="container-fluid text-sm-center text-md-start text-lg-start">
             <div class="row div--bordertop div--padding">
                 <div class="col-sm-9 bold">
-                    <h5>Od. Débora Marquez- Mat. 123456</h5>
+                    <h5>Od. Débora Marquez- Mat. 19190</h5>
                     <h5>Odontologia Integral</h5>
-                    <h5>San Luis 1641 - Monte Maíz - Córdoba
+                    <h5>San Luis 1641 - Monte Maíz - Córdoba</h5>
                     <h5>Tel: 3468 417605</h5>
-                    <h5>E-mail: <a href="mailto:debi.marquez@hotmail.com">debi.marquez@hotmail.com</a></h5>
-                    <h5>Horarios de atención: De Lunes a Viernes, solo con cita previa. <a href="./solicitaturno.html">Solicita tu turno</a></h5>
+                    <h5>E-mail: 
+                        <a href="mailto:debi.marquez@hotmail.com">
+                        debi.marquez@hotmail.com
+                        </a>
+                    </h5>
+                    <h5>Horarios de atención: De Lunes a Viernes, solo con cita previa. 
+                        <a href="./solicitaturno.html">Solicita tu turno</a>
+                    </h5>
                     <br>
                     <button type="button" class="btn btn-light">
                         <a class="dropdown-item" href="#header">
@@ -124,11 +285,17 @@
                     </button>
                 </div>
                 <div class="col-sm-3">
-                    <img class="img-fluid" src="../media/logo2.png" alt="logo" width="200px">
+                    <img class="img-fluid" src="../media/logo2.png" 
+                    alt="logo" width="200px">
                 </div>
             </div>
-        <br>
+            <br>
+        </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+        crossorigin="anonymous">
+    </script>
 </body>
 </html>

@@ -5,54 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DM Odontología</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+    crossorigin="anonymous">
     <link href="../css/main.css" rel="stylesheet">
     <link rel="shortcut icon" href="../media/logo2.png">
 </head>
 <body>
-    <header id="header"></header>
-    <!--Logo + Navagador-->
+    <!--Sección Header: Logo + Navegador-->
+    <header id="header">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#header"><img src="../media/logo2.png" alt="logo" width="100px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand" href="#header">
+                <img src="../media/logo2.png" alt="logo de odontologia de Débora Márquez" 
+                width="100px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" 
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav nav--fontsize">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html#inicio">Inicio</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="../index.html#quiensoy">Quien Soy</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="../index.html#especialidades">Especialidades</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="../index.html#consultorio">Consultorio</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./paraninos.html">Para Niños</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="./consejos.html">Consejos</a>
-                </li>
-                <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Consultas
-                </a>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./preguntas.html">Preguntes Frecuentes</a></li>
-                    <li><a class="dropdown-item" href="#header">Solicita Turno</a></li>
+                <ul class="navbar-nav nav--fontsize">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html"
+                            aria-current="page" 
+                            >Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#quiensoy"
+                            >Quien Soy
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#especialidades"
+                            >Especialidades
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#consultorio"
+                            >Consultorio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./paraninos.html"
+                            >Para Niños
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./consejos.html"
+                            >Consejos
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"
+                            >Consultas
+                        </a>
+                        <ul class="consultas--backcolor dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="./preguntas.html"
+                                    >Preguntes Frecuentes
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="./solicitaturno.html"
+                                    >Solicita Turno
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
-                </li>
-            </ul>
             </div>
         </div>
     </nav>
-    <!--Solicita tu turno -->
-    <div class="form--margen container-fluid text-sm-center text-md-start text-lg-start" id="solicitaturno">
+    </header>
+    <!--Seccion Solicita tu turno: En la misma se podran 
+    cargar los datos para coordinar un turno -->
+    <div class="form--margen container-fluid text-sm-center 
+        text-md-start text-lg-start" 
+        id="solicitaturno">
         <div class="row">
             <div class="col">
                 <h4>Solicita Turno</h4>
@@ -81,7 +115,8 @@
                 <div class="col-md-4">
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="exampleInputEmail1" 
+                        aria-describedby="emailHelp">
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -138,13 +173,17 @@
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
                             Otro
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" 
+                            rows="1"></textarea>
                         </label>
                     </div>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Detalle de la consulta o motivo del turno</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="exampleFormControlTextarea1" class="form-label">
+                        Detalle de la consulta o motivo del turno
+                    </label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" 
+                    rows="3"></textarea>
                 </div>
                 <div class="col-12">
                     <button class="btn btn-primary" type="submit">Solicitar turno</button>
@@ -160,12 +199,18 @@
         <div class="container-fluid text-sm-center text-md-start text-lg-start">
             <div class="row div--bordertop div--padding">
                 <div class="col-sm-9 bold">
-                    <h5>Od. Débora Marquez- Mat. 123456</h5>
+                    <h5>Od. Débora Marquez- Mat. 19190</h5>
                     <h5>Odontologia Integral</h5>
-                    <h5>San Luis 1641 - Monte Maíz - Córdoba
+                    <h5>San Luis 1641 - Monte Maíz - Córdoba</h5>
                     <h5>Tel: 3468 417605</h5>
-                    <h5>E-mail: <a href="mailto:debi.marquez@hotmail.com">debi.marquez@hotmail.com</a></h5>
-                    <h5>Horarios de atención: De Lunes a Viernes, solo con cita previa. <a href="#header">Solicita tu turno</a></h5>
+                    <h5>E-mail: 
+                        <a href="mailto:debi.marquez@hotmail.com">
+                        debi.marquez@hotmail.com
+                        </a>
+                    </h5>
+                    <h5>Horarios de atención: De Lunes a Viernes, solo con cita previa. 
+                        <a href="./solicitaturno.html">Solicita tu turno</a>
+                    </h5>
                     <br>
                     <button type="button" class="btn btn-light">
                         <a class="dropdown-item" href="#header">
@@ -174,11 +219,17 @@
                     </button>
                 </div>
                 <div class="col-sm-3">
-                    <img class="img-fluid" src="../media/logo2.png" alt="logo" width="200px">
+                    <img class="img-fluid" src="../media/logo2.png" 
+                    alt="logo" width="200px">
                 </div>
             </div>
-        <br>
+            <br>
+        </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+        crossorigin="anonymous">
+    </script>
 </body>
 </html>
