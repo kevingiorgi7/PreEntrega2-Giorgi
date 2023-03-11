@@ -18,7 +18,10 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#header">
-                <img src="../media/logo2.png" alt="logo de odontologia de Débora Márquez" 
+                <img src="../media/logo2.png" 
+                alt="logo de odontología de Débora Márquez, 
+                circulo con leyenda Débora Márquez y una muela de fondo. 
+                Todo en color dorado" 
                 width="100px">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
@@ -84,111 +87,113 @@
     </header>
     <!--Seccion Solicita tu turno: En la misma se podran 
     cargar los datos para coordinar un turno -->
-    <div class="form--margen container-fluid text-sm-center 
-        text-md-start text-lg-start" 
-        id="solicitaturno">
-        <div class="row">
-            <div class="col">
-                <h4>Solicita Turno</h4>
-                <p>
-                    Completa este breve formulario para poder coordinar un turno.
-                </p>
-                <br>
+    <div class="container-fluid text-sm-center text-md-start text-lg-start 
+        form--margen">
+        <div class="row seccion--padding">
+            <div>
+            <h4>Solicita Turno</h4>
+            <p>
+                Completa este breve formulario para poder coordinar un turno.
+            </p>
             </div>
-            <form action="#" method="get" class="row g-3 needs-validation" novalidate>
-                <div class="col-md-4">
-                    <label for="validationCustom01" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="validationCustom01" required>
-                </div>
-                <div class="col-md-4">
-                    <label for="validationCustom02" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="validationCustom02" required>
-                </div>
-                <div class="col-md-3">
-                    <label for="validationCustom05" class="form-label">Número de teléfono</label>
-                    <input type="text" class="form-control" id="validationCustom05" required>
-                </div>
-                <div class="col-md-3">
-                    <label for="validationCustom05" class="form-label">DNI</label>
-                    <input type="text" class="form-control" id="validationCustom05" required>
-                </div>
-                <div class="col-md-4">
+        </div>
+        <div class="row" id="solicitaturno">
+            <div class="col-sm-12 col-md-12 col-lg-9">
+                <form action="#" method="get" class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                        <label for="validationCustom01" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="validationCustom01" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom02" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="validationCustom02" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom05" class="form-label">Número de teléfono</label>
+                        <input type="text" class="form-control" id="validationCustom05" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom05" class="form-label">DNI</label>
+                        <input type="text" class="form-control" id="validationCustom05" required>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" 
+                            aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom03" class="form-label">Localidad</label>
+                        <input type="text" class="form-control" id="validationCustom03" required>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label">Rango horario</label>
+                        <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Elige</option>
+                        <option value="manana">Mañana (De 9 a 12 hs)</option>
+                        <option value="tarde1">Tarde (De 13:30 a 15:30 hs)</option>
+                        <option value="tarde2">Tarde (De 16:00 a 19:00 hs)</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="validationCustom04" class="form-label">Hora de preferencia</label>
+                        <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Elige</option>
+                        <option value="09:00">09:00 hs.</option>
+                        <option value="09:30">09:30 hs.</option>
+                        <option value="10:00">10:00 hs.</option>
+                        <option value="10:30">10:30 hs.</option>
+                        <option value="11:00">11:00 hs.</option>
+                        <option value="11:30">11:30 hs.</option>
+                        <option value="13:30">13:30 hs.</option>
+                        <option value="14:00">14:00 hs.</option>
+                        <option value="14:30">14:30 hs.</option>        
+                        <option value="15:00">15:00 hs.</option>
+                        <option value="15:30">15:30 hs.</option>
+                        <option value="16:00">16:00 hs.</option>
+                        <option value="16:30">16:30 hs.</option>
+                        <option value="17:00">17:00 hs.</option>
+                        <option value="17:30">17:30 hs.</option>        
+                        <option value="18:00">18:00 hs.</option>
+                        <option value="18:30">18:30 hs.</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationCustom04" class="form-label">Motivo del turno</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Consulta
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Dolor
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Otro
+                                <textarea class="form-control" id="exampleFormControlTextarea1" 
+                                rows="1"></textarea>
+                            </label>
+                        </div>
+                    </div>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" 
-                        aria-describedby="emailHelp">
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <label for="validationCustom03" class="form-label">Localidad</label>
-                    <input type="text" class="form-control" id="validationCustom03" required>
-                </div>
-                <div class="col-md-3">
-                    <label for="validationCustom04" class="form-label">Rango horario</label>
-                    <select class="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">Elige</option>
-                    <option value="manana">Mañana (De 9 a 12 hs)</option>
-                    <option value="tarde1">Tarde (De 13:30 a 15:30 hs)</option>
-                    <option value="tarde2">Tarde (De 16:00 a 19:00 hs)</option>
-                    </select>
-                </div>
-                <div class="col-md-3">
-                    <label for="validationCustom04" class="form-label">Hora de preferencia</label>
-                    <select class="form-select" id="validationCustom04" required>
-                    <option selected disabled value="">Elige</option>
-                    <option value="09:00">09:00 hs.</option>
-                    <option value="09:30">09:30 hs.</option>
-                    <option value="10:00">10:00 hs.</option>
-                    <option value="10:30">10:30 hs.</option>
-                    <option value="11:00">11:00 hs.</option>
-                    <option value="11:30">11:30 hs.</option>
-                    <option value="13:30">13:30 hs.</option>
-                    <option value="14:00">14:00 hs.</option>
-                    <option value="14:30">14:30 hs.</option>        
-                    <option value="15:00">15:00 hs.</option>
-                    <option value="15:30">15:30 hs.</option>
-                    <option value="16:00">16:00 hs.</option>
-                    <option value="16:30">16:30 hs.</option>
-                    <option value="17:00">17:00 hs.</option>
-                    <option value="17:30">17:30 hs.</option>        
-                    <option value="18:00">18:00 hs.</option>
-                    <option value="18:30">18:30 hs.</option>
-                    </select>
-                </div>
-                <div class="col-md-4">
-                    <label for="validationCustom04" class="form-label">Motivo del turno</label>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Consulta
+                        <label for="exampleFormControlTextarea1" class="form-label">
+                            Detalle de la consulta o motivo del turno
                         </label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" 
+                        rows="3"></textarea>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Dolor
-                        </label>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Solicitar turno</button>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label" for="flexCheckDefault">
-                            Otro
-                            <textarea class="form-control" id="exampleFormControlTextarea1" 
-                            rows="1"></textarea>
-                        </label>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">
-                        Detalle de la consulta o motivo del turno
-                    </label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" 
-                    rows="3"></textarea>
-                </div>
-                <div class="col-12">
-                    <button class="btn btn-primary" type="submit">Solicitar turno</button>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </div>
     <br>

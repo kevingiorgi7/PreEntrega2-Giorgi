@@ -12,7 +12,6 @@ body {
     border-top: #258260 0.01rem solid;
 }
 
-
 /* Navegador */
 .nav--fontsize {
     font-size: 1.5rem;
@@ -31,8 +30,6 @@ a:hover {
     background-color: #FFFFFF !important;
 }
 
-
-
 /*Boton subir*/
 button a:hover {
     font-weight: bold;
@@ -41,19 +38,18 @@ button a:hover {
 }
 
 /*Titulos*/
+/*Titulos de secciones*/
 h4 {
     font-family: 'Carter One', cursive;
     color: #3fb68b;
-    font-size: 3rem;
+    font-size: 2rem;
 }
+/*Titulos de consejos y preguntas*/
 h3 {
     font-family: 'Carter One';
-    color: #3fb68b;
+    color: #258260;
     list-style: none;
-}
-/*Quien Soy*/
-.quiensoy--letra {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 /*Especialidades*/
@@ -68,12 +64,10 @@ dl:hover {
     background-color: #cee7de;
 }
 
-
 /* Footer */
 .div--padding {
     padding: 2rem
 }
-
 .footer--color {
     background-image: linear-gradient(to bottom,#FFFFFF,#b7d8cc);
     color: #13583f;
@@ -82,216 +76,110 @@ h5 {
     font-weight: bolder;
 }
 
-
-/* Para niños */
-
-.grid-ninos {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 12% 22% 22% 22% 22%;
-    height: 190vh;
-    margin: 0.7rem;
-    padding: 0.7rem;
+/*Para niños*/
+iframe {
+    padding: 0.5rem;
     justify-items: center;
-    align-items: center;
-    grid-template-areas: 
-    "intro intro intro"
-    "video1 video3 video3"
-    "video2 video3 video3"
-    "video4 video4 video4"
-    "video4 video4 video4";
-}
-div iframe {
-    border: #258260 0.01rem solid;
-    padding: 0.1rem;
-}
-.grid-intro {
-    grid-area: intro;
-    justify-content: center;
-}
-.grid-video-1 {
-    grid-area: video1;
-}
-.grid-video-2 {
-    grid-area: video2;
-}
-.grid-video-3 {
-    grid-area: video3;
-}
-.grid-video-4 {
-    grid-area: video4;
 }
 
+.seccion--padding {
+        padding: 1rem
+}
 
-
-/*Consejos + Preguntas Frecuentes */
-.flex-padre {
+/*Consejos*/
+.flex-padre-consejos {
     display: flex;
     flex-flow: row, wrap;
-    padding: 1rem;
-    margin: 1rem;
-    height: 60rem;
 }
-.flex-hijo-titulo {
-    width: 70rem;
-    margin: 1rem;
+.consejos-caja {
+    border: 0.1rem solid #258260;
+    background-color: #97dcc3;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
 }
-.flex-hijo-video {
-    width: 90rem;
-    margin: 1rem;
+
+/*Preguntas*/
+.grid-padre-preguntas {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+        align-items: start;
+        row-gap: 0.5rem;
+        column-gap: 0.5rem;
+        margin: 0.5rem;
+        grid-template-areas: 
+        "bruxismo bruxismo problemas problemas"
+        "xerastomia xerastomia problemas problemas"
+        "herpes herpes aftas aftas";
+}
+.grid-bruxismo {
+    grid-area: bruxismo;
+    border: 0.1rem solid #258260;
+    background-color: #97dcc3;
+    padding: 0.7rem;
+}
+.grid-xerastomia {
+    grid-area: xerastomia;
+    border: 0.1rem solid #258260;
+    background-color: #97dcc3;
+    padding: 0.7rem;
+}
+.grid-herpes {
+    grid-area: herpes;
+    border: 0.1rem solid #258260;
+    background-color: #97dcc3;
+    padding: 0.7rem;
+}
+.grid-aftas {
+    grid-area: aftas;
+    border: 0.1rem solid #258260;
+    background-color: #97dcc3;
+    padding: 0.7rem;
+}
+.grid-problemas {
+    grid-area: problemas;
+    border: 0.1rem solid #258260;
+    background-color: #97dcc3;
+    padding: 0.7rem;
 }
 .negrita {
     font-weight: bold;
 }
-
-
-
-
-/*Formulario*/
-.form--margen {
-    margin: 2rem;
-    width: 60%;
+@media (max-width: 767px) {
+    .grid-padre-preguntas {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+        "bruxismo"
+        "xerastomia"
+        "herpes"
+        "aftas"
+        "problemas";
+    }
 }
 
+/*Formulario*/
+/*.form--margen {
+    margin: 1rem;
+}*/
 form {
     border: 0.1rem solid #258260;
-    margin: 1rem;
-    padding: 1rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
     background-color: #97dcc3;
     font-weight: bold;
 }
 
-@media (max-width: 800px) {
-    .form--margen {
-    margin: 0rem;
-    width: 90%;
-    }
-}
-
+/*MEDIAS QUERYS*/
+/*Navagador*/
 @media (min-width: 992px) and (max-width: 1182px) {
     .nav--fontsize {
         font-size: 1.2rem;
     }
-    nav div ul li {
+    div ul li {
         padding-right: 0rem;
         padding-left: 0rem;
     }
 }   
-
-@media (max-width: 320px) {
-    .video--chico {
-        width: 250px;
-        height: 160px;
-    }
-    .video--grande {
-        width: 250px;
-        height: 160px;
-    }
-    .div--padding {
-        padding: 0rem
-    }
-    .grid-ninos {
-        font-size: 0.75rem;
-        margin: 0.3rem;
-        padding: 0.3rem;
-        justify-items: start;
-        grid-template-areas: 
-        "intro intro intro"
-        "video1 video1 video1"
-        "video2 video2 video2"
-        "video3 video3 video3"
-        "video4 video4 video4";    
-    }
-}
-
-@media (max-width: 480px) and (min-width: 321px) {
-    .video--chico {
-        width: 285px;
-        height: 230px;
-    }
-    .video--grande {
-        width: 285px;
-        height: 230px;
-    }
-    .grid-ninos {
-        font-size: 0.85rem;
-        margin: 0.3rem;
-        padding: 0.3rem;
-        grid-template-areas: 
-        "intro intro intro"
-        "video1 video1 video1"
-        "video2 video2 video2"
-        "video3 video3 video3"
-        "video4 video4 video4";    
-    }
-}
-
-@media (max-width: 600px) and (min-width: 481px) {
-    .video--chico {
-        width: 285px;
-        height: 230px;
-    }
-    .video--grande {
-        width: 285px;
-        height: 230px;
-    }
-    .grid-ninos {
-        height: 255vh;
-        font-size: 0.85rem;
-        margin: 0.3rem;
-        padding: 0.3rem;
-        grid-template-areas: 
-        "intro intro intro"
-        "video1 video1 video1"
-        "video2 video2 video2"
-        "video3 video3 video3"
-        "video4 video4 video4";    
-    }
-}
-
-@media (max-width: 767px) and (min-width: 601px) {
-    .video--chico {
-        width: 170px;
-        height: 100px;
-    }
-    .video--grande {
-        width: 370px;
-        height: 220px;
-    }
-    .grid-ninos {
-            height: 110vh;
-            font-size: 0.85rem;
-            margin: 0.5rem;
-            padding: 0.5rem;
-
-    }
-}
-
-@media (max-width: 1023px) and (min-width: 768px) {
-    .video--chico {
-        width: 230px;
-        height: 140px;
-    }
-    .video--grande {
-        width: 480px;
-        height: 290px;
-    }
-    .grid-ninos {
-            height: 140vh;
-            font-size: 0.85rem;
-            margin: 0.5rem;
-            padding: 0.5rem;
-
-    }
-}
-
-@media (max-width: 1199px) and (min-width: 1024px) {
-    .video--chico {
-        width: 320px;
-        height: 190px;
-    }
-    .video--grande {
-        width: 640px;
-        height: 385px;
-    }
-}
