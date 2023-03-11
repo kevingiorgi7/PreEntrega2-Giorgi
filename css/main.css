@@ -1,185 +1,223 @@
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
-
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
 /*BODY*/
 body {
-    font-family: 'Gothic A1', sans-serif;
-    background-image: linear-gradient(to top,#FFFFFF,#b7d8cc);
+  font-family: "Gothic A1", sans-serif;
+  background-image: linear-gradient(to top, #FFFFFF, #b7d8cc);
 }
 
 /*Divisorios*/
 .div--bordertop {
-    border-top: #258260 0.01rem solid;
+  border-top: #258260 0.01rem solid;
 }
 
 /* Navegador */
 .nav--fontsize {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
+
 div ul li {
-    padding-right: 1.1rem;
-    padding-left: 1.1rem;
+  padding-right: 1.1rem;
+  padding-left: 1.1rem;
 }
+
 a:hover {
-    font-weight: bold;
-    text-decoration: underline;
-    font-family: 'Carter One', cursive;
-    color: #3fb68b !important
+  font-weight: bold;
+  text-decoration: underline;
+  font-family: "Carter One", cursive;
+  color: #3fb68b !important;
 }
+
 .consultas--backcolor :active {
-    background-color: #FFFFFF !important;
+  background-color: #FFFFFF !important;
 }
 
 /*Boton subir*/
 button a:hover {
-    font-weight: bold;
-    color: #3fb68b !important;
-    font-family: 'Gothic A1', sans-serif;
+  font-weight: bold;
+  color: #3fb68b !important;
+  font-family: "Gothic A1", sans-serif;
 }
 
 /*Titulos*/
 /*Titulos de secciones*/
 h4 {
-    font-family: 'Carter One', cursive;
-    color: #3fb68b;
-    font-size: 2rem;
+  font-family: "Carter One", cursive;
+  color: #3fb68b;
+  font-size: 2rem;
+  transition: 2s;
 }
+
+h4:hover {
+  color: #13583f;
+  font-size: 2.7rem;
+}
+
 /*Titulos de consejos y preguntas*/
 h3 {
-    font-family: 'Carter One';
-    color: #258260;
-    list-style: none;
-    font-size: 1.5rem;
+  font-family: "Carter One";
+  color: #258260;
+  list-style: none;
+  font-size: 1.5rem;
 }
 
 /*Especialidades*/
 dl:hover {
-    color: #258260;
-    background-color: #dbe9e4;
-    font-style: italic;
+  color: #258260;
+  background-color: #dbe9e4;
+  font-style: italic;
 }
 
 /*Consul*/
 .consul--button {
-    background-color: #cee7de;
+  background-color: #cee7de;
 }
 
 /* Footer */
 .div--padding {
-    padding: 2rem
+  padding: 2rem;
 }
+
 .footer--color {
-    background-image: linear-gradient(to bottom,#FFFFFF,#b7d8cc);
-    color: #13583f;
+  background-image: linear-gradient(to bottom, #FFFFFF, #b7d8cc);
+  color: #13583f;
 }
+
 h5 {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 /*Para niños*/
+@keyframes efecto-h4 {
+  0% {
+    color: #3fb68b;
+  }
+  20% {
+    color: yellow;
+    font-size: 1.7rem;
+  }
+  40% {
+    color: orange;
+    font-size: 2.5rem;
+  }
+  60% {
+    color: blue;
+    font-size: 2.7rem;
+  }
+  80% {
+    color: red;
+    font-size: 2.3rem;
+  }
+}
+.h4-paraninos {
+  animation-name: efecto-h4;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
 iframe {
-    padding: 0.5rem;
-    justify-items: center;
+  padding: 0.5rem;
+  justify-items: center;
 }
 
 .seccion--padding {
-        padding: 1rem
+  padding: 1rem;
 }
 
 /*Consejos*/
 .flex-padre-consejos {
-    display: flex;
-    flex-flow: row, wrap;
+  display: flex;
+  flex-flow: row, wrap;
 }
+
 .consejos-caja {
-    border: 0.1rem solid #258260;
-    background-color: #97dcc3;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+  border: 0.1rem solid #258260;
+  background-color: #97dcc3;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 /*Preguntas*/
 .grid-padre-preguntas {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto;
-        justify-items: center;
-        align-items: start;
-        row-gap: 0.5rem;
-        column-gap: 0.5rem;
-        margin: 0.5rem;
-        grid-template-areas: 
-        "bruxismo bruxismo problemas problemas"
-        "xerastomia xerastomia problemas problemas"
-        "herpes herpes aftas aftas";
-}
-.grid-bruxismo {
-    grid-area: bruxismo;
-    border: 0.1rem solid #258260;
-    background-color: #97dcc3;
-    padding: 0.7rem;
-}
-.grid-xerastomia {
-    grid-area: xerastomia;
-    border: 0.1rem solid #258260;
-    background-color: #97dcc3;
-    padding: 0.7rem;
-}
-.grid-herpes {
-    grid-area: herpes;
-    border: 0.1rem solid #258260;
-    background-color: #97dcc3;
-    padding: 0.7rem;
-}
-.grid-aftas {
-    grid-area: aftas;
-    border: 0.1rem solid #258260;
-    background-color: #97dcc3;
-    padding: 0.7rem;
-}
-.grid-problemas {
-    grid-area: problemas;
-    border: 0.1rem solid #258260;
-    background-color: #97dcc3;
-    padding: 0.7rem;
-}
-.negrita {
-    font-weight: bold;
-}
-@media (max-width: 767px) {
-    .grid-padre-preguntas {
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto auto;
-        grid-template-areas: 
-        "bruxismo"
-        "xerastomia"
-        "herpes"
-        "aftas"
-        "problemas";
-    }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  align-items: start;
+  row-gap: 0.5rem;
+  column-gap: 0.5rem;
+  margin: 0.5rem;
+  grid-template-areas: "bruxismo bruxismo problemas problemas" "xerastomia xerastomia problemas problemas" "herpes herpes aftas aftas";
 }
 
-/*Formulario*/
-/*.form--margen {
-    margin: 1rem;
-}*/
+.grid-bruxismo {
+  grid-area: bruxismo;
+  border: 0.1rem solid #258260;
+  background-color: #97dcc3;
+  padding: 0.7rem;
+}
+
+.grid-xerastomia {
+  grid-area: xerastomia;
+  border: 0.1rem solid #258260;
+  background-color: #97dcc3;
+  padding: 0.7rem;
+}
+
+.grid-herpes {
+  grid-area: herpes;
+  border: 0.1rem solid #258260;
+  background-color: #97dcc3;
+  padding: 0.7rem;
+}
+
+.grid-aftas {
+  grid-area: aftas;
+  border: 0.1rem solid #258260;
+  background-color: #97dcc3;
+  padding: 0.7rem;
+}
+
+.grid-problemas {
+  grid-area: problemas;
+  border: 0.1rem solid #258260;
+  background-color: #97dcc3;
+  padding: 0.7rem;
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+@media (max-width: 767px) {
+  .grid-padre-preguntas {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: "bruxismo" "xerastomia" "herpes" "aftas" "problemas";
+  }
+}
 form {
-    border: 0.1rem solid #258260;
-    margin: 0.5rem;
-    padding: 0.5rem;
-    background-color: #97dcc3;
-    font-weight: bold;
+  border: 0.1rem solid #258260;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: #97dcc3;
+  font-weight: bold;
 }
 
 /*MEDIAS QUERYS*/
 /*Navagador*/
 @media (min-width: 992px) and (max-width: 1182px) {
-    .nav--fontsize {
-        font-size: 1.2rem;
-    }
-    div ul li {
-        padding-right: 0rem;
-        padding-left: 0rem;
-    }
-}   
+  .nav--fontsize {
+    font-size: 1.2rem;
+  }
+  div ul li {
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,11 @@
+{
+  "name": "3da-pre-entrega",
+  "version": "1.0.0",
+  "description": "Sass 3er pre-entrega",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

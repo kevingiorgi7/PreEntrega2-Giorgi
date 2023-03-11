@@ -1,0 +1,211 @@
+$padding-nav: 1.1rem;
+@import "colores";
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+/*BODY*/
+body {
+    font-family: 'Gothic A1', sans-serif;
+    background-image: linear-gradient(to top,#FFFFFF,#b7d8cc);
+}
+
+/*Divisorios*/
+.div--bordertop {
+    border-top: $verde-oscuro 0.01rem solid;
+}
+
+/* Navegador */
+.nav--fontsize {
+    font-size: 1.5rem;
+}
+div ul li {
+    padding-right: $padding-nav;
+    padding-left: $padding-nav;
+}
+a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Carter One', cursive;
+    color: $verde !important
+}
+.consultas--backcolor :active {
+    background-color: #FFFFFF !important;
+}
+
+/*Boton subir*/
+button a:hover {
+    font-weight: bold;
+    color: $verde !important;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+/*Titulos*/
+/*Titulos de secciones*/
+h4 {
+    font-family: 'Carter One', cursive;
+    color: $verde;
+    font-size: 2rem;
+    transition: 2s;
+}
+h4:hover {
+    color: $verde-muy-oscuro;
+    font-size: 2.7rem;
+}
+
+
+
+/*Titulos de consejos y preguntas*/
+h3 {
+    font-family: 'Carter One';
+    color: $verde-oscuro;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+/*Especialidades*/
+dl:hover {
+    color: $verde-oscuro;
+    background-color: #dbe9e4;
+    font-style: italic;
+}
+
+/*Consul*/
+.consul--button {
+    background-color: #cee7de;
+}
+
+/* Footer */
+.div--padding {
+    padding: 2rem
+}
+.footer--color {
+    background-image: linear-gradient(to bottom,#FFFFFF,#b7d8cc);
+    color: #13583f;
+}
+h5 {
+    font-weight: bolder;
+}
+
+/*Para niños*/
+@keyframes efecto-h4{
+    0%{color: $verde;}
+    20%{color: yellow;
+        font-size: 1.7rem;
+    }
+    40%{color: orange;
+        font-size: 2.5rem;
+    }
+    60%{color: blue;
+        font-size: 2.7rem;
+    }
+    80%{color: red;
+    font-size: 2.3rem;
+}
+}
+.h4-paraninos {
+    animation-name: efecto-h4;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+iframe {
+    padding: 0.5rem;
+    justify-items: center;
+}
+
+.seccion--padding {
+        padding: 1rem
+}
+
+/*Consejos*/
+.flex-padre-consejos {
+    display: flex;
+    flex-flow: row, wrap;
+}
+.consejos-caja {
+    border: 0.1rem solid $verde-oscuro;
+    background-color: $verde-claro;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/*Preguntas*/
+.grid-padre-preguntas {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+        align-items: start;
+        row-gap: 0.5rem;
+        column-gap: 0.5rem;
+        margin: 0.5rem;
+        grid-template-areas: 
+        "bruxismo bruxismo problemas problemas"
+        "xerastomia xerastomia problemas problemas"
+        "herpes herpes aftas aftas";
+}
+
+@mixin preguntas-caja {
+    border: 0.1rem solid $verde-oscuro;
+    background-color: $verde-claro;
+    padding: 0.7rem;
+}
+
+.grid-bruxismo {
+    grid-area: bruxismo;
+    @include preguntas-caja;
+}
+.grid-xerastomia {
+    grid-area: xerastomia;
+    @include preguntas-caja;
+}
+.grid-herpes {
+    grid-area: herpes;
+    @include preguntas-caja;
+}
+.grid-aftas {
+    grid-area: aftas;
+    @include preguntas-caja;
+}
+.grid-problemas {
+    grid-area: problemas;
+    @include preguntas-caja;
+}
+.negrita {
+    font-weight: bold;
+}
+@media (max-width: 767px) {
+    .grid-padre-preguntas {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: 
+        "bruxismo"
+        "xerastomia"
+        "herpes"
+        "aftas"
+        "problemas";
+    }
+}
+
+form {
+    border: 0.1rem solid $verde-oscuro;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: $verde-claro;
+    font-weight: bold;
+}
+
+/*MEDIAS QUERYS*/
+/*Navagador*/
+@media (min-width: 992px) and (max-width: 1182px) {
+    .nav--fontsize {
+        font-size: 1.2rem;
+    }
+    div ul li {
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
+}   
