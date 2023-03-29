@@ -1,5 +1,6 @@
 $padding-nav: 1.1rem;
 @import "colores";
+@import "bordes";
 
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
@@ -12,7 +13,7 @@ body {
 
 /*Divisorios*/
 .div--bordertop {
-    border-top: $verde-oscuro 0.01rem solid;
+    border-top: $bordes;
 }
 
 /* Navegador */
@@ -125,30 +126,64 @@ iframe {
     flex-flow: row, wrap;
 }
 .consejos-caja {
-    border: 0.1rem solid $verde-oscuro;
+    border: $bordes;
     background-color: $verde-claro;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
 
 /*Preguntas*/
+
+.accordion-button:not(.collapsed) {
+    color: $verde-claro;
+    background-color: $verde-oscuro;
+}
+.accordion-button:focus {
+    border-color: $verde;
+}
+
+.accordion {
+    --bs-accordion-btn-focus-border-color: $verde;
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem $verde;
+}
+.accordion-button {
+    background-color: $verde-claro;
+    color: $verde-oscuro;
+}
+
+.accordion-flush .accordion-item:first-child {
+    border-top: $bordes;
+    border-bottom: $bordes;
+}
+.accordion-flush .accordion-item {
+    border-top: $bordes;
+    border-right: $bordes;
+    border-left: $bordes;
+    border-radius: $bordes;
+    border-bottom: $bordes;
+}
+.accordion-flush .accordion-item:last-child {
+    border-bottom: $bordes;
+}
+
 .grid-padre-preguntas {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto auto;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto auto auto;
         justify-items: center;
         align-items: start;
         row-gap: 0.5rem;
         column-gap: 0.5rem;
         margin: 0.5rem;
         grid-template-areas: 
-        "bruxismo bruxismo problemas problemas"
-        "xerastomia xerastomia problemas problemas"
-        "herpes herpes aftas aftas";
+        "bruxismo problemas"
+        "xerastomia problemas"
+        "herpes problemas"
+        "aftas problemas";
 }
 
 @mixin preguntas-caja {
-    border: 0.1rem solid $verde-oscuro;
+    border: $bordes;
     background-color: $verde-claro;
     padding: 0.7rem;
 }
@@ -189,6 +224,8 @@ iframe {
         "problemas";
     }
 }
+
+
 
 form {
     border: 0.1rem solid $verde-oscuro;

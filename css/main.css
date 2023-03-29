@@ -9,7 +9,7 @@ body {
 
 /*Divisorios*/
 .div--bordertop {
-  border-top: #258260 0.01rem solid;
+  border-top: 0.1rem solid #258260;
 }
 
 /* Navegador */
@@ -141,16 +141,52 @@ iframe {
 }
 
 /*Preguntas*/
+.accordion-button:not(.collapsed) {
+  color: #97dcc3;
+  background-color: #258260;
+}
+
+.accordion-button:focus {
+  border-color: #3fb68b;
+}
+
+.accordion {
+  --bs-accordion-btn-focus-border-color: $verde;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem $verde;
+}
+
+.accordion-button {
+  background-color: #97dcc3;
+  color: #258260;
+}
+
+.accordion-flush .accordion-item:first-child {
+  border-top: 0.1rem solid #258260;
+  border-bottom: 0.1rem solid #258260;
+}
+
+.accordion-flush .accordion-item {
+  border-top: 0.1rem solid #258260;
+  border-right: 0.1rem solid #258260;
+  border-left: 0.1rem solid #258260;
+  border-radius: 0.1rem solid #258260;
+  border-bottom: 0.1rem solid #258260;
+}
+
+.accordion-flush .accordion-item:last-child {
+  border-bottom: 0.1rem solid #258260;
+}
+
 .grid-padre-preguntas {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto auto auto;
   justify-items: center;
   align-items: start;
   row-gap: 0.5rem;
   column-gap: 0.5rem;
   margin: 0.5rem;
-  grid-template-areas: "bruxismo bruxismo problemas problemas" "xerastomia xerastomia problemas problemas" "herpes herpes aftas aftas";
+  grid-template-areas: "bruxismo problemas" "xerastomia problemas" "herpes problemas" "aftas problemas";
 }
 
 .grid-bruxismo {
